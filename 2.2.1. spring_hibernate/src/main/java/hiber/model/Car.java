@@ -10,7 +10,7 @@ public class Car {
     private Long id;
     private String model;
     private int series;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @MapsId
     private User user;
     public Car() {
