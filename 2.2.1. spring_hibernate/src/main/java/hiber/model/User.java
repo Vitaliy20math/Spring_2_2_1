@@ -10,7 +10,7 @@ public class User {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
-   @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+   @OneToOne(mappedBy = "user")
    //@JoinColumn(name = "car")
    private Car car;
 
